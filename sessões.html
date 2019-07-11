@@ -1,0 +1,103 @@
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/sessões.css">
+    <script src="js/sessões.js"></script>
+    <title>Tela de sessões </title>
+</head>
+
+<body onload="registrador.carregarSeções()">
+
+    <nav class="navegador">
+        <div class="tituloNavegador">
+            <h1>Cinema High Tech</h1>
+        </div>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="sessões.html">
+                <li>Seções</li>
+            </a>
+
+            <a href="clientes.html">
+                <li>Clientes</li>
+            </a>
+            <a href="filmes.html">
+                <li>Filmes</li>
+            </a>
+            <div class="pipoca">
+                <img src="img/cinema.jpeg" alt="imagem pipoca">
+            </div>
+        </ul>
+    </nav>
+    <div class="tituloGerencia">
+        <h1>Gerência de Seções</h1>
+    </div>
+    <Main>
+
+        <div class="novaSessão">
+            <h2>Nova Seção</h2>
+            <label>Filme da seção
+                <select name="filme" id="filme">
+                    <option value="">Selecione o filme da seção...</option>
+                </select>
+            </label>
+            <br>
+            <label>Sala da seção
+                <select name="sala" id="sala">
+                    <option value="">Selecione à sala do filme...</option>
+                    <option value="Sala A">Sala A</option>
+                    <option value="Sala B">Sala B</option>
+                    <option value="Sala C">Sala C</option>
+                </select>
+
+            </label>
+            <br>
+            <label>Dublado/Legendado
+                <select name="linguagem" id="linguagem">
+                    <option value="Dublado">Dublado</option>
+                    <option value="Legendado">Legendado</option>
+                </select>
+            </label>
+            <br>
+            <label>3D/2D
+                <select name="dimensão" id="dimensão">
+                    <option value="3D">3D</option>
+                    <option value="2D">2D</option>
+                </select>
+            </label>
+            <br>
+            <label>Data da seção
+                <input type="date" id="data">
+            </label>
+            <br>
+            <label>Horário da seção
+                <input type="time" id="horário">
+            </label>
+            <div class="botões">
+                <button type="button" onclick="registrador.Salvar()" id="salvar">Salvar</button>
+                <button type="button" onclick="registrador.Limpar()" id="cancelar">Cancelar</button>
+            </div>
+            <h2>Seções Cadastradas</h2>
+            <table>
+                <thead>
+                    <td>Filme</td>
+                    <td>Sala</td>
+                    <td>Dublado/Legendado</td>
+                    <td>3D/2D</td>
+                    <td>Data</td>
+                    <td>Horário</td>
+
+
+                </thead>
+
+                <tbody id="tabela">
+
+                </tbody>
+            </table>
+        </div>
+
+    </Main>
+</body>
+
+</html>

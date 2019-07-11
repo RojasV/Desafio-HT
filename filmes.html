@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/filmes.css">
+    <script src="js/filmes.js"></script>
+    <title>Tela de filmes</title>
+</head>
+
+<body onload="registrador.carregarFilmes()">
+
+    <nav class="navegador">
+        <div class="tituloNavegador">
+            <h1>Cinema High Tech</h1>
+        </div>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="sessões.html">
+                <li>Sessões</li>
+            </a>
+
+            <a href="clientes.html">
+                <li>Clientes</li>
+            </a>
+            <a href="filmes.html">
+                <li>Filmes</li>
+            </a>
+        </ul>
+        <div class="pipoca">
+            <img src="img/cinema.jpeg" alt="imagem pipoca">
+        </div>
+    </nav>
+    <div class="tituloGerencia">
+        <h1>Gerência de Filmes </h1>
+    </div>
+    <Main>
+
+        <div class="novoFilme">
+            <h2>Novo Filme</h2>
+            <label>Nome do filme
+                <input type="text" placeholder="Nome do filme" id="nome">
+            </label>
+            <br>
+            <label>Duração
+                <input type="text" placeholder="Duração do filme" id="duração">
+            </label>
+            <br>
+            <label>Classificação etária
+                <input type="number" placeholder="Idade" id="idade">
+            </label>
+            <br>
+            <label>Gênero
+                <input type="text" placeholder="gênero do filme" id="gênero">
+            </label>
+            <br>
+            <label>Sinopse
+                <input type="text" placeholder="Sinopse do filme" id="sinopse">
+            </label>
+            <div class="botões">
+                <button type="button" onclick="registrador.Salvar()" id="salvar">Salvar</button>
+                <button type="button" onclick="registrador.Limpar()" id="cancelar">Cancelar</button>
+            </div>
+            <h2>Filmes Cadastrados</h2>
+            <table>
+                <thead>
+                    <td>Filme</td>
+                    <td>Duração</td>
+                    <td>Classificação</td>
+                    <td>Gênero</td>
+                    <td>Sinopse</td>
+
+
+                </thead>
+
+                <tbody id="tabela">
+
+                </tbody>
+            </table>
+        </div>
+
+    </Main>
+</body>
+
+</html>

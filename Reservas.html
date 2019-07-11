@@ -1,0 +1,325 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reservas.css">
+    <script src="js/reservas.js"></script>
+    <title>Tela de reservas </title>
+</head>
+
+<body onload="registrador.carregarDados()">
+
+    <nav class="navegador">
+        <div class="tituloNavegador">
+            <h1>Cinema High Tech</h1>
+        </div>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="sessões.html">
+                <li>Seções</li>
+            </a>
+
+            <a href="clientes.html">
+                <li>Clientes</li>
+            </a>
+            <a href="filmes.html">
+                <li>Filmes</li>
+            </a>
+        </ul>
+        <div class="pipoca">
+            <img src="img/cinema.jpeg" alt="imagem pipoca">
+        </div>
+    </nav>
+    <div class="tituloReserva">
+        <h1>Gerência de Reservas</h1>
+    </div>
+    <Main>
+
+        <div class="novaReserva">
+            <h2>Nova Reserva</h2>
+            <label>Seção
+                <select name="seção" id="seção">
+                    <option value="">Selecione à seção...</option>
+                </select>
+            </label>
+            <br>
+            <label>Cliente
+                <select name="cliente" id="cliente">
+                    <option value="">Selecione o cliente...</option>
+
+                </select>
+
+            </label>
+            <br>
+            <fieldset>
+                <div class="card">
+
+                    <h1 id="titulo">Cadeiras</h1>
+
+                    <div class="vagas">
+                        <div class="rotulo">
+                            A
+                        </div>
+
+                        <div class="vaga" id="A1" onclick="registrador.setarCadeirasA(0)">
+                            A1
+                        </div>
+                        <div class="vaga" id="A2" onclick="registrador.setarCadeirasA(1)">
+                            A2
+                        </div>
+                        <div class="vaga" id="A3" onclick="registrador.setarCadeirasA(2)">
+                            A3
+                        </div>
+                        <div class="vaga" id="A4" onclick="registrador.setarCadeirasA(3)">
+                            A4
+                        </div>
+                        <div class="vaga" id="A5" onclick="registrador.setarCadeirasA(4)">
+                            A5
+                        </div>
+                        <div class="vaga" id="A6" onclick="registrador.setarCadeirasA(5)">
+                            A6
+                        </div>
+                        <div class="vaga" id="A7" onclick="registrador.setarCadeirasA(6)">
+                            A7
+                        </div>
+                        <div class="vaga" id="A8" onclick="registrador.setarCadeirasA(7)">
+                            A8
+                        </div>
+                        <div class="vaga" id="A9" onclick="registrador.setarCadeirasA(8)">
+                            A9
+                        </div>
+                        <div class="vaga" id="A10" onclick="registrador.setarCadeirasA(9)">
+                            A10
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+
+
+
+                    <div class="vagas">
+                        <div class="rotulo">
+                            B
+                        </div>
+
+                        <div class="vaga" id="B1" onclick="registrador.setarCadeirasB(0)">
+                            B1
+                        </div>
+                        <div class="vaga" id="B2" onclick="registrador.setarCadeirasB(1)">
+                            B2
+                        </div>
+                        <div class="vaga" id="B3" onclick="registrador.setarCadeirasB(2)">
+                            B3
+                        </div>
+                        <div class="vaga" id="B4" onclick="registrador.setarCadeirasB(3)">
+                            B4
+                        </div>
+                        <div class="vaga" id="B5" onclick="registrador.setarCadeirasB(4)">
+                            B5
+                        </div>
+                        <div class="vaga" id="B6" onclick="registrador.setarCadeirasB(5)">
+                            B6
+                        </div>
+                        <div class="vaga" id="B7" onclick="registrador.setarCadeirasB(6)">
+                            B7
+                        </div>
+                        <div class="vaga" id="B8" onclick="registrador.setarCadeirasB(7)">
+                            B8
+                        </div>
+                        <div class="vaga" id="B9" onclick="registrador.setarCadeirasB(8)">
+                            B9
+                        </div>
+                        <div class="vaga" id="B10" onclick="registrador.setarCadeirasB(9)">
+                            B10
+                        </div>
+                    </div>
+                    <div class="card">
+
+
+
+                        <div class="vagas">
+                            <div class="rotulo">
+                                C
+                            </div>
+
+                            <div class="vaga" id="C1" onclick="registrador.setarCadeirasC(0)">
+                                C1
+                            </div>
+                            <div class="vaga" id="C2" onclick="registrador.setarCadeirasC(1)">
+                                C2
+                            </div>
+                            <div class="vaga" id="C3" onclick="registrador.setarCadeirasC(2)">
+                                C3
+                            </div>
+                            <div class="vaga" id="C4" onclick="registrador.setarCadeirasC(3)">
+                                C4
+                            </div>
+                            <div class="vaga" id="C5" onclick="registrador.setarCadeirasC(4)">
+                                C5
+                            </div>
+                            <div class="vaga" id="C6" onclick="registrador.setarCadeirasC(5)">
+                                C6
+                            </div>
+                            <div class="vaga" id="C7" onclick="registrador.setarCadeirasC(6)">
+                                C7
+                            </div>
+                            <div class="vaga" id="C8" onclick="registrador.setarCadeirasC(7)">
+                                C8
+                            </div>
+                            <div class="vaga" id="C9" onclick="registrador.setarCadeirasC(8)">
+                                C9
+                            </div>
+                            <div class="vaga" id="C10" onclick="registrador.setarCadeiraC(9)">
+                                C10
+                            </div>
+                        </div>
+                        <div class="card">
+
+
+
+                            <div class="vagas">
+                                <div class="rotulo">
+                                    D
+                                </div>
+
+                                <div class="vaga" id="D1" onclick="registrador.setarCadeirasD(0)">
+                                    D1
+                                </div>
+                                <div class="vaga" id="D2" onclick="registrador.setarCadeirasD(1)">
+                                    D2
+                                </div>
+                                <div class="vaga" id="D3" onclick="registrador.setarCadeirasD(2)">
+                                    D3
+                                </div>
+                                <div class="vaga" id="D4" onclick="registrador.setarCadeirasD(3)">
+                                    D4
+                                </div>
+                                <div class="vaga" id="D5" onclick="registrador.setarCadeirasD(4)">
+                                    D5
+                                </div>
+                                <div class="vaga" id="D6" onclick="registrador.setarCadeirasD(5)">
+                                    D6
+                                </div>
+                                <div class="vaga" id="D7" onclick="registrador.setarCadeirasD(6)">
+                                    D7
+                                </div>
+                                <div class="vaga" id="D8" onclick="registrador.setarCadeirasD(7)">
+                                    D8
+                                </div>
+                                <div class="vaga" id="D9" onclick="registrador.setarCadeirasD(8)">
+                                    D9
+                                </div>
+                                <div class="vaga" id="D10" onclick="registrador.setarCadeirasD(9)">
+                                    D10
+                                </div>
+                            </div>
+                            <div class="card">
+
+
+
+                                <div class="vagas">
+                                    <div class="rotulo">
+                                        E
+                                    </div>
+
+                                    <div class="vaga" id="E1" onclick="registrador.setarCadeirasE(0)">
+                                        E1
+                                    </div>
+                                    <div class="vaga" id="E2" onclick="registrador.setarCadeirasE(1)">
+                                        E2
+                                    </div>
+                                    <div class="vaga" id="E3" onclick="registrador.setarCadeirasE(2)">
+                                        E3
+                                    </div>
+                                    <div class="vaga" id="E4" onclick="registrador.setarCadeirasE(3)">
+                                        E4
+                                    </div>
+                                    <div class="vaga" id="E5" onclick="registrador.setarCadeirasE(4)">
+                                        E5
+                                    </div>
+                                    <div class="vaga" id="E6" onclick="registrador.setarCadeirasE(5)">
+                                        E6
+                                    </div>
+                                    <div class="vaga" id="E7" onclick="registrador.setarCadeirasE(6)">
+                                        E7
+                                    </div>
+                                    <div class="vaga" id="E8" onclick="registrador.setarCadeirasE(7)">
+                                        E8
+                                    </div>
+                                    <div class="vaga" id="E9" onclick="registrador.setarCadeirasE(8)">
+                                        E9
+                                    </div>
+                                    <div class="vaga" id="E10" onclick="registrador.setarCadeirasE(9)">
+                                        E10
+                                    </div>
+                                </div>
+                                <div class="card">
+
+
+
+                                    <div class="vagas">
+                                        <div class="rotulo">
+                                            F
+                                        </div>
+
+                                        <div class="vaga" id="F1" onclick="registrador.setarCadeirasF(0)">
+                                            F1
+                                        </div>
+                                        <div class="vaga" id="F2" onclick="registrador.setarCadeirasF(1)">
+                                            F2
+                                        </div>
+                                        <div class="vaga" id="F3" onclick="registrador.setarCadeirasF(2)">
+                                            F3
+                                        </div>
+                                        <div class="vaga" id="F4" onclick="registrador.setarCadeirasF(3)">
+                                            F4
+                                        </div>
+                                        <div class="vaga" id="F5" onclick="registrador.setarCadeirasF(4)">
+                                            F5
+                                        </div>
+                                        <div class="vaga" id="F6" onclick="registrador.setarCadeirasF(5)">
+                                            F6
+                                        </div>
+                                        <div class="vaga" id="F7" onclick="registrador.setarCadeirasF(6)">
+                                            F7
+                                        </div>
+                                        <div class="vaga" id="F8" onclick="registrador.setarCadeirasF(7)">
+                                            F8
+                                        </div>
+                                        <div class="vaga" id="F9" onclick="registrador.setarCadeirasF(8)">
+                                            F9
+                                        </div>
+                                        <div class="vaga" id="F10" onclick="registrador.setarCadeirasF(9)">
+                                            F10
+                                        </div>
+                                    </div>
+
+                                </div>
+            </fieldset>
+            <br>
+            <div class="botões">
+                <button type="button" onclick="registrador.Salvar()" id="salvar">Salvar</button>
+                <button type="button" onclick="registrador.Limpar()" id="cancelar">Cancelar</button>
+            </div>
+            <h2>Reservas Cadastradas</h2>
+            <table>
+                <thead>
+                    <td>Seção</td>
+
+                    <td>Cadeira</td>
+
+
+                </thead>
+
+                <tbody id="tabela">
+
+                </tbody>
+            </table>
+        </div>
+
+    </Main>
+</body>
+
+</html>

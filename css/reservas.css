@@ -1,0 +1,206 @@
+body{
+    font-family: sans-serif;
+    margin: 0px;
+}
+.navegador{
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+    float: left;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 2px 2px 5px gray;
+    
+}
+.navegador ul{
+    padding: 0;
+}
+
+.navegador li{
+    list-style: none;
+    padding: 5%;
+    text-align: left;
+}
+
+.navegador a{
+    text-decoration: none;
+    color: white;
+}
+
+.navegador li:hover{
+    background-color: bisque;
+    transition: background-color 0.5s;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+Main{
+    width: 68%;
+    float: right;
+    margin-left: 2%;
+    margin-top: 4%;
+}
+
+Main input{
+    border: none;
+    border-bottom: 1px solid gray;
+    margin-left: 7px;
+    margin-top: 25px;
+    
+}
+
+.tituloGerencia{
+    background-color: blueviolet;
+    margin: 0;
+    width: 70%;
+    float: right;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px gray;
+    
+}
+.tituloGerencia h1{
+    margin-left: 2.5%;
+    font-weight: 200;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+#salvar{
+    background-color: greenyellow;
+    color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px gray;
+    cursor: pointer;
+
+}
+#cancelar{
+    background-color: red;
+    color: white;
+    border: solid 1px;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 1px 3px 5px gray;
+    cursor: pointer;
+    
+}
+
+#salvar:hover{
+    padding: 15px;
+}
+
+#cancelar:hover{
+    padding: 15px;
+}
+
+.botões{
+    margin-top: 20px;
+}
+
+.novaReserva td{
+    text-align: center;
+    width: 20%;
+    background-color: blueviolet;
+    padding: 5px;
+    color: white;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px gray;
+}
+
+.img{
+    width: 25px;
+    cursor: pointer;
+}
+
+.img:hover{
+    padding: 5px;
+   
+}
+
+#seção{
+    border-radius: 5px;
+    
+    margin-left: 7px;
+    margin-top: 25px;
+}
+
+#cliente{
+    border-radius: 5px;
+    
+    margin-left: 7px;
+    margin-top: 25px;
+}
+
+.tituloReserva{
+    background-color: blueviolet;
+    margin: 0;
+    width: 70%;
+    float: right;
+    border-radius: 7px;
+    box-shadow: 1px 1px 8px gray;
+    
+}
+.tituloReserva h1{
+    margin-left: 2.5%;
+    font-weight: 200;
+    font-size: 25px;
+    color: antiquewhite;
+}
+
+.card{
+    width: 100%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+#titulo{
+    text-align: center;
+    padding: 10px;
+}
+
+.rotulo{
+    font-weight: bold;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.vagas{
+    display: flex;
+}
+
+.vaga{
+    border: 1px solid black;
+    width: 25%;
+    margin: 0px 5px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px gray;
+    cursor: pointer;
+}
+
+.ocupado{
+    background-color: red;
+}
+
+.desocupado{
+    background-color: green;
+}
+
+fieldset{
+    margin-top: 30px;
+    border: 15px solid blueviolet;
+    border-radius: 10px;
+    background-color: blueviolet;
+    border-style: outset;
+}
+
+.pipoca img{
+    width: 55%;
+}

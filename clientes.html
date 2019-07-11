@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/clientes.css">
+    <script src="js/clientes.js"></script>
+    <title>Tela de clientes</title>
+</head>
+
+<body onload="registrador.carregarClientes()">
+
+    <nav class="navegador">
+        <div class="tituloNavegador">
+            <h1>Cinema High Tech</h1>
+        </div>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="sessões.html">
+                <li>Sessões</li>
+            </a>
+
+            <a href="clientes.html">
+                <li>Clientes</li>
+            </a>
+            <a href="filmes.html">
+                <li>Filmes</li>
+            </a>
+            <div class="pipoca">
+                <img src="img/cinema.jpeg" alt="imagem pipoca">
+            </div>
+        </ul>
+    </nav>
+    <div class="tituloGerencia">
+        <h1>Gerência de Clientes</h1>
+    </div>
+    <Main>
+
+        <div class="novoCliente">
+            <h2>Novo cliente</h2>
+            <label>Nome do cliente
+                <input type="text" placeholder="Nome do cliente" id="nome">
+            </label>
+            <br>
+            <label>Idade do cliente
+                <input type="text" placeholder="Idade do cliente" id="idade">
+            </label>
+            <br>
+            <label>Email do cliente
+                <input type="text" placeholder="Email do cliente" id="email">
+            </label>
+            <div class="botões">
+                <button type="button" onclick="registrador.Salvar()" id="salvar">Salvar</button>
+                <button type="button" onclick="registrador.Limpar()" id="cancelar">Cancelar</button>
+            </div>
+            <h2>Clientes Cadastrados</h2>
+            <table>
+                <thead>
+                    <td>Nome</td>
+                    <td>Idade</td>
+                    <td>Email</td>
+
+
+                </thead>
+
+                <tbody id="tabela">
+
+                </tbody>
+            </table>
+        </div>
+
+    </Main>
+</body>
+
+</html>
