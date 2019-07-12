@@ -8,7 +8,7 @@ class Registrador {
         this.cadeirasE = [false, false, false, false, false, false, false, false, false, false]
         this.cadeirasF = [false, false, false, false, false, false, false, false, false, false]
 
-        this.reserva = []
+        this.reservas = []
         this.reservaEditada = []
 
     }
@@ -173,14 +173,114 @@ class Registrador {
 
 
     lerDados() {
+
         let reserva = {}
 
         reserva.seção = document.getElementById("seção").value
         reserva.cliente = document.getElementById("cliente").value
 
+
+        for (let i = 0; i < this.cadeirasA.length; i++) {
+
+
+            if (this.cadeirasA[i] == !true) {
+
+
+                reserva.cadeira = document.getElementById(`A${i + 1}`).innerText
+
+            }
+        }
+
+        for (let i = 0; i < this.cadeirasB.length; i++) {
+            document.getElementById(`B${i + 1}`).classList.remove("ocupado")
+            document.getElementById(`B${i + 1}`).classList.remove("desocupado")
+
+            if (this.cadeirasB[i] == true) {
+                document.getElementById(`B${i + 1}`).classList.add("ocupado")
+            } else {
+                document.getElementById(`B${i + 1}`).classList.add("desocupado")
+            }
+        }
+
+        for (let i = 0; i < this.cadeirasC.length; i++) {
+            document.getElementById(`C${i + 1}`).classList.remove("ocupado")
+            document.getElementById(`C${i + 1}`).classList.remove("desocupado")
+
+            if (this.cadeirasC[i] == true) {
+                document.getElementById(`C${i + 1}`).classList.add("ocupado")
+            } else {
+                document.getElementById(`C${i + 1}`).classList.add("desocupado")
+            }
+        }
+
+        for (let i = 0; i < this.cadeirasD.length; i++) {
+            document.getElementById(`D${i + 1}`).classList.remove("ocupado")
+            document.getElementById(`D${i + 1}`).classList.remove("desocupado")
+
+            if (this.cadeirasD[i] == true) {
+                document.getElementById(`D${i + 1}`).classList.add("ocupado")
+            } else {
+                document.getElementById(`D${i + 1}`).classList.add("desocupado")
+            }
+        }
+
+        for (let i = 0; i < this.cadeirasE.length; i++) {
+            document.getElementById(`E${i + 1}`).classList.remove("ocupado")
+            document.getElementById(`E${i + 1}`).classList.remove("desocupado")
+
+            if (this.cadeirasE[i] == true) {
+                document.getElementById(`E${i + 1}`).classList.add("ocupado")
+            } else {
+                document.getElementById(`E${i + 1}`).classList.add("desocupado")
+            }
+        }
+
+        for (let i = 0; i < this.cadeirasF.length; i++) {
+            document.getElementById(`F${i + 1}`).classList.remove("ocupado")
+            document.getElementById(`F${i + 1}`).classList.remove("desocupado")
+
+            if (this.cadeirasF[i] == true) {
+                document.getElementById(`F${i + 1}`).classList.add("ocupado")
+            } else {
+                document.getElementById(`F${i + 1}`).classList.add("desocupado")
+            }
+        }
+
         return reserva
     }
 
+    Validar(reserva) {
+        if ((reserva.seção && reserva.cliente) == "" && reserva.cadeira == true) {
+            alert("Preencha o(s) campo(s) vazio(s)!")
+            return false
+        }
+
+        return true
+    }
+
+    Salvar() {
+        let reserva = this.lerDados()
+        if (this.reservaEditada == null) {
+            if (this.Validar(reserva)) {
+                this.reservas.push(reserva)
+
+
+
+            }
+        } else {
+            this.filmeEditado.nome = filme.nome
+            this.filmeEditado.duração = filme.duração
+            this.filmeEditado.classificação = filme.classificação
+            this.filmeEditado.gênero = filme.gênero
+            this.filmeEditado.sinopse = filme.sinopse
+
+
+
+            this.filmeEditado = null
+
+
+        }
+    }
 
 }
 
