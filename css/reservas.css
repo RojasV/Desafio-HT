@@ -7,7 +7,7 @@ body{
     height: 100%;
     background-color: aqua;
     float: left;
-    color: white;
+    color: blueviolet;
     border-radius: 5px;
     text-align: center;
     box-shadow: 2px 2px 5px gray;
@@ -25,7 +25,7 @@ body{
 
 .navegador a{
     text-decoration: none;
-    color: white;
+    color: blueviolet;
 }
 
 .navegador li:hover{
@@ -202,5 +202,7 @@ fieldset{
 }
 
 .pipoca img{
-    width: 55%;
+    width:75%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 15px gray;
 }
